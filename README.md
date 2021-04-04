@@ -2,7 +2,7 @@
 
 lib_trades is a mcfunction library that allows other datapacks to easily add trades to wandering traders. The main focus of this library was to make it easy to use but still powerful enough to provide a satisfying interface.
 
-# Termonology
+# Terminology
 A trade inside a Villager is called a "trade option".
 A virtual collection of trade options is called a "trade pool". For each Villager a random member of a trade pool is selected and shown in the trade interface.
 
