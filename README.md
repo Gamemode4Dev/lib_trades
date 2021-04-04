@@ -11,7 +11,7 @@ To utilize this library any implementing datapack must provide one or more funct
 - `HandItems[0]` || `weapon.mainhand`: Contents of the `sell` tag of the trade option.
 - `HandItems[1]` || `weapon.offhand`: Contents of the `buy` tag of the trade option.
 - `ArmorItems[0].tag.gm4_trades.options`: Trade option meta NBT, e.g. `maxUses`, `rewardXp`. All vanilla trade option meta tags are supported.
-- `ArmorItems[3`] || `armor.head`: Contents of the `buyB` tag of the trade option.
+- `ArmorItems[3]` || `armor.head`: Contents of the `buyB` tag of the trade option.
 
 These slots must not be filled explicitly in the summon command, and may therefore be populated by loot tables. The item contained in `ArmorItems[0]` has two special tags that are used to store trade option meta NBT:
 - `ArmorItems[0].tag.gm4_trades.options` holds vanilla metadata, as explained above.
