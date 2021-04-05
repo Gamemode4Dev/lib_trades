@@ -17,6 +17,8 @@ These slots must not be filled explicitly in the summon command, and may therefo
 - `DecorItem.tag.gm4_trades.options` holds vanilla metadata, as explained above.
 - `DecorItem.tag.gm4_trades.pool` holds a string known as the trade option's "trade pool name". This should be a namespaced string, which identifies that multiple trade options that should be shown as one trade option on the Wandering Trader. Trade options with an omitted `pool` tag are considered to be in unnamed trade pools and are always displayed as their own, standalone trade option in the Wandering Trader.
 
+Please note that the `example_pack` must be started by calling `#load:load`, as a proper load implementation is not included.
+
 ## Technical Details
 Any adapted implementations of this library should make sure that:
 - For trade pools, ALL trades with a matching trade pool name should be collected and then one of the members should be drawn uniform-randomly to be displayed as a single trade option in the Wandering Trader.
