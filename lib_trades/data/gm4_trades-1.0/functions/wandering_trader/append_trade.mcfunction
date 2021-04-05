@@ -11,7 +11,9 @@ data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade set fr
 data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade.sell set from storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data.Items[{Slot:2b}]
 data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade.buy set from storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data.Items[{Slot:3b}]
 data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade.buyB set from storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data.Items[{Slot:4b}]
-kill @e[type=trader_llama,tag=gm4_pooled_trade_option]
+
+# kill llama without drops and clean up loot table
+execute as @e[type=trader_llama,tag=gm4_pooled_trade_option] run data merge entity @s {Health:0,DeathTime:19}
 data remove storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data
 
 # add trade
