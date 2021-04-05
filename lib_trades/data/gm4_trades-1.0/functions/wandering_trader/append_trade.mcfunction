@@ -12,7 +12,7 @@ data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade.sell s
 data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade.buy set from storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data.Items[{Slot:3b}]
 data modify storage gm4_trades-1.0:temp/wandering_trader/next_trade trade.buyB set from storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data.Items[{Slot:4b}]
 kill @e[type=trader_llama,tag=gm4_pooled_trade_option]
-#data remove storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data
+data remove storage gm4_trades-1.0:temp/wandering_trader/unprocessed_trade_data llama_data
 
 # add trade
 data modify entity @s Offers.Recipes append from storage gm4_trades-1.0:temp/wandering_trader/next_trade trade
