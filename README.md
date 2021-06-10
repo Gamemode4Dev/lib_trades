@@ -13,7 +13,7 @@ To utilize this library any implementing datapack must provide one or more funct
 - `Items[{Slot:4b}]` || `horse.2`: Contents of the `buyB` tag of the trade option.
 - `DecorItem.tag.gm4_trades.options`: Trade option meta NBT, e.g. `maxUses`, `rewardXp`. All vanilla trade option meta tags are supported.
 
-These slots must not be filled explicitly in the summon command, and may therefore be populated by loot tables. The item contained in `Items[{Slot:0b}]` has two special tags that are used to store trade option meta NBT:
+These slots must not be filled explicitly in the summon command, and may therefore be populated by loot tables. The item contained in `Items[{Slot:0b}]` (`DecorItem`) has two special tags that are used to store trade option meta NBT:
 - `DecorItem.tag.gm4_trades.options` holds vanilla metadata, as explained above.
 - `DecorItem.tag.gm4_trades.pool` holds a string known as the trade option's "trade pool name". This should be a namespaced string, which identifies that multiple trade options that should be shown as one trade option on the Wandering Trader. Trade options with an omitted `pool` tag are considered to be in unnamed trade pools and are always displayed as their own, standalone trade option in the Wandering Trader.
 
