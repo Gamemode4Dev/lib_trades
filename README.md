@@ -23,4 +23,4 @@ Please note that the `example_pack` must be started by calling `#load:load`, as 
 Any adapted implementations of this library should make sure that:
 - For trade pools, ALL trades with a matching trade pool name should be collected and then one of the members should be drawn uniform-randomly to be displayed as a single trade option in the Wandering Trader.
 - Trade options with omitted trade pool names should always be placed in their own standalone trade option.
-- Not summoning an Armor Stand for a trade option should result in that trade option not appearring. 
+- Not summoning a `trader_llama` for a trade option should result in that trade option not appearring. 
